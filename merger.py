@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#MP4Box -cat part1.mp4 -cat part2.mp4 -new joinedfile.mp4
 
 import ConfigParser
 import commands
