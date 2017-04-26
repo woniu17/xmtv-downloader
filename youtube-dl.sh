@@ -1,0 +1,11 @@
+proxy="--proxy socks5://127.0.0.1:1080/"
+proxy=""
+format="--extract-audio --audio-format mp3"
+postfix="-%(playlist_index)02d.%(ext)s"
+#youtube-dl $proxy $format -o "孟丽君$postfix" https://www.youtube.com/watch?list=PLWF0QXWmbnjFVgbug69O7lvpSZijWeN4h
+#youtube-dl $proxy $format -o "春江花月夜$postfix" https://www.youtube.com/watch?list=PLWF0QXWmbnjEhTsblX3yN7n4Q9E0x-qpf
+#youtube-dl $proxy $format -o "杨家将$postfix" https://www.youtube.com/watch?list=PLWF0QXWmbnjFyn_WPmCzorc9r8RWCWkwf
+#youtube-dl $proxy $format -o "狸猫换太子$postfix" https://www.youtube.com/watch?list=PL2DP1tW695kYvB1N76bKDcXQd_eRCrO5j
+format="-f 18"
+#youtube-dl $proxy $format -o "薛丁山救五美$postfix" https://www.youtube.com/watch?list=PLWF0QXWmbnjFuQamJ2teKg2lA7hokX8ph
+#youtube-dl $proxy $format -o "描金扇$postfix" https://www.youtube.com/watch?list=PLWF0QXWmbnjGvi2WdCiX8WMYGoVPEfa4e
