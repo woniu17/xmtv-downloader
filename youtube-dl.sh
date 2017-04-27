@@ -18,4 +18,4 @@ gzx="描金扇"
 url="https://www.youtube.com/watch?list=PLWF0QXWmbnjGvi2WdCiX8WMYGoVPEfa4e"
 gzx="红尘客"
 url="https://www.youtube.com/watch?list=PLWF0QXWmbnjGMY3TTHyywa-mzzwB4JM6Y"
-mkdir $gzx ; cd $gzx && (youtube-dl -k $proxy $format -o "$gzx$postfix" $url && cd .) && cd -
+mkdir $gzx ; cd $gzx && (youtube-dl -k $proxy $format -o "$gzx$postfix" $url || cd .) && cd -
