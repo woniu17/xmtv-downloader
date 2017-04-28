@@ -3,6 +3,8 @@ proxy=""
 postfix="-%(playlist_index)02d.%(ext)s"
 format="-f 18"
 format="-f 18 --extract-audio --audio-format mp3"
+args="-k --verbose"
+args="-k"
 
 gzx="春江花月夜"
 url="https://www.youtube.com/watch?list=PLWF0QXWmbnjEhTsblX3yN7n4Q9E0x-qpf"
@@ -20,4 +22,6 @@ gzx="红尘客"
 url="https://www.youtube.com/watch?list=PLWF0QXWmbnjGMY3TTHyywa-mzzwB4JM6Y"
 gzx="新七侠五义"
 url="https://www.youtube.com/watch?list=PLWF0QXWmbnjGCM7SnsPeShfgk6iqrJDnW"
-mkdir $gzx ; cd $gzx && (youtube-dl -k $proxy $format -o "$gzx$postfix" $url || cd .) && cd -
+gzx="赵匡胤"
+url="https://www.youtube.com/watch?list=PLWF0QXWmbnjFFi6VaNY83OiTMkDc3wv7B"
+mkdir $gzx ; cd $gzx && (youtube-dl $args $proxy $format -o "$gzx$postfix" $url || cd .) && cd -
