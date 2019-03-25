@@ -1,8 +1,8 @@
 proxy="--proxy socks5://127.0.0.1:1080/"
 proxy=""
 postfix="-%(playlist_index)02d.%(ext)s"
-format="-f 18"
 format="-f 18 --extract-audio --audio-format mp3"
+format="-f 18"
 args="-k --verbose"
 args="-k -i"
 
@@ -33,4 +33,13 @@ gzx="玉楼春"
 url="https://www.youtube.com/watch?list=PL8MwjIpV5cFUJcvEld540FKIVRCeMquMo"
 gzx="秦淮烟雨"
 url="https://www.youtube.com/watch?list=PL9v187Z2l2r3VfFzduhvb_Ouy3Hj1ZQSF"
+gzx="巫山一段云"
+url="https://www.youtube.com/watch?list=PLWF0QXWmbnjHi2_t8H3HIl0k0CB7Qr0VS"
+gzx="孔明三气周瑜"
+url="https://www.youtube.com/watch?list=PL8MwjIpV5cFXbaPNIGfBWWQlu10YXMQ6r"
+gzx="白蛇传"
+url="https://www.youtube.com/playlist?list=PL8MwjIpV5cFXv6YRrbY_kLXhn3WsiZTnS"
+gzx="妈祖"
+url="https://www.youtube.com/playlist?list=PL8MwjIpV5cFUd3rok6NLTfknHY0vurNd7"
+
 mkdir $gzx ; cd $gzx && (youtube-dl $args $proxy $format -o "$gzx$postfix" $url || cd .) && cd -
